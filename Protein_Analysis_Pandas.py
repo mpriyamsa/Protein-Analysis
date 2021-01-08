@@ -23,6 +23,7 @@ df_n3 = pd.read_excel(r'200618-N18-N3-Result-Type1-send.xlsx', sheet_name=2, ski
 # Merge the two dataframes based on all proteins that are present in both N18 and N3 cell types.
 merged_ID = pd.merge(df_n18, df_n3, on=['ID'], how='inner')
 
+
 """
 Create two new columns in merged dataframe showing difference in all the proteins from Day0 to Day4
 for both N18 and N3 cell types
